@@ -4,10 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>My First Day Page</title>
+  <title>Oliver's Day One Page</title>
 </head>
 <body>
-  <p>This is a paragraph.</p>
+  <h3 class="intro">Oliver David Jones</h3>
+  <h4 class="intro">Born in Pocatello, Idaho on June 23<sup>rd</sup>, 1981</h4>
+  <p id="about" class="intro">ABOUT THIS PAGE</p><span id="explain">This app was built when I was first learning JavaScript and web page design. It's not completely finished as I want to add additional functionality.</span>
+  <section class="can">
+    <h2>COMPONENT WAVE</h2>
+  <article id="add_art">
+    <canvas id="add_can"></canvas>
+    <fieldset>
+      Function or Series:
+      <select id="function">
+        <option name="sin" checked=true>SIN</option><option name="cos">COS</option>
+        <option name="f_square">Fourier Square</option><option name="f_triangle">Fourier Triangle</option>
+        <option name="f_custom">Fourier Right Triangle</option>
+      </select>
+      <p>Frequency:&nbsp;<input type="number" value="1" step="1" max="500" min="0" id="freq" name="freq" /><br/>Amplitude:&nbsp;<input type="number" value="0.25" step=".01" min=".01" max="1" id="amp" name="amp" /></p>
+      <p><input type="button" id="draw" value="Draw Wave" />
+      <input type="button" id="add" value="Add Wave"/></p>
+    </fieldset>
+    <a href="https://en.wikipedia.org/wiki/Fourier_series" target="_blank">Read About Fourier Series</a><br>
+    <a href="https://youtu.be/MfIgQgjb5xA" target="_blank">Watch a video on the Fourier Series</a>
+  </article>
+</section>
+<section class="can">
+    <h2>COMPOSITE WAVE</h2>
+  <article id="comp_art">
+    <canvas id="comp_can"></canvas>
+  </article>
+</section>
+<section class="can">
+    <h2>ADDED WAVES</h2>
+  <article id="all_art"></article>
+</section>	
   <script src="script.js"></script>
 </body>
 </html>
